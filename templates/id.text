@@ -1,0 +1,9 @@
+  <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict')}}" method="post","get">
+     <right>  <B> <h3> User_Name: <input style="font-size:20px;color:black;" id="searchBox" type="text" width="48" height="48" name="windspeed" placeholder="User_name" required="required" ></b><I>
+            <B><h3>Password: <input style="font-size:20px;color:black;" id="searchBox" type="password" width="48" height="48" name="wind direction" placeholder="password" required="required" >
+    </select>
+    <br><br>		
+        <h3>{{failed}}</h3>
+         <center>   <button type="submit" style="font-size:23px;color:black;text-align:left;" class="btn btn-primary btn-block btn-large">Predict</button></center>
+       <br><br>
